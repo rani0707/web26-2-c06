@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 블로그 레이아웃</title>
+    <style>
+        body { background: whitesmoke; }
+        #page-wrapper { width: 800px; margin: 0 auto; background: white; }
+        #main-header { background: lightblue; }
+        .master-title { color: navy; }
+        .master-description { color: gray; }
+
+        #main-navigation { overflow: hidden; background: lightgray; }
+        .pull-left { width: 600px; float: left; }
+        .pull-right { width: 200px; float: left; }
+        .outer-menu { overflow: hidden; }
+        .outer-menu-item { width: 180px; float: left; }
+        .menu-title { color: navy; }
+        .input-search { width: 130px; }
+        input[type="text"] { background: white; }
+        input:focus { background-color: lightyellow; }
+        a:hover { color: red; }
+        a:active { color: blue; }
+
+        #content { overflow: hidden; }
+        #main-section { width: 600px; float: left; }
+        #main-aside { width: 200px; float: left; background: whitesmoke; }
+        .article-title { color: navy; }
+        .article-date { color: gray; }
+        #main-aside h3 { color: navy; }
+        #main-footer { background: lightgray; }
+    </style>
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title">HTML5 Example Preview</h1>
+                <h2 class="master-description">한빛아카데미</h2>
+            </hgroup>
+        </header>
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title">HTML5</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#html-basic">개요와 활용</a></li>
+                            <li class="inner-menu-item"><a href="#html-practice">응용과 실습</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">CSS3</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="1selector_tagidclass.html">기본 선택자</a></li>
+                            <li class="inner-menu-item"><a href="9attribute_basic.html">속성 선택자</a></li>
+                            <li class="inner-menu-item"><a href="11secs_descendants.html">후손과 자손 선택자</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">JavaScript</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../Chapter2/05HTMLPageWithScript.html">스크립트 작성</a></li>
+                            <li class="inner-menu-item"><a href="../Chapter2/07HTMLPageWithOuterScript.html">외부 스크립트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <!-- 교과서의 검색 입력 양식: 검색 기능은 구현하지 않음 -->
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <section id="main-section">
+                <article id="html-basic">
+                    <div class="article-header">
+                        <h1 class="article-title">HTML5 개요와 활용</h1>
+                        <p class="article-date">2026년 09월 30일</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="../Chapter3/Penguins.jpg" alt="펭귄 사진" width="430">
+                        <br>
+                        <br>
+                        <p>HTML은 웹 페이지의 내용을 구성하는 언어입니다.</p>
+                        <br>
+                        <p>제목, 문단, 목록, 링크와 이미지 태그를 사용하여 내용을 표현합니다.</p>
+                    </div>
+                </article>
+                <article id="html-practice">
+                    <div class="article-header">
+                        <h1 class="article-title">HTML5 응용과 실습</h1>
+                        <p class="article-date">2026년 09월 30일</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="../Chapter3/papa.jpg" alt="북극곰 사진" width="430">
+                        <br>
+                        <br>
+                        <p>시맨틱 태그로 머리말, 메뉴, 본문, 사이드바와 꼬리말을 나눕니다.</p>
+                        <br>
+                        <p>CSS 선택자를 사용하여 각 영역의 색상과 배경을 지정합니다.</p>
+                    </div>
+                </article>
+            </section>
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>카테고리</h3>
+                    <ul>
+                        <li><a href="../Chapter2/01HTMLPage.html">HTML 기본 구조</a></li>
+                        <li><a href="../Chapter3/1text_header.html">글자 태그</a></li>
+                        <li><a href="../Chapter3/14image_basic.html">이미지와 멀티미디어</a></li>
+                        <li><a href="../Chapter4/1form_basic.html">입력 양식</a></li>
+                        <li><a href="1selector_tagidclass.html">CSS 선택자</a></li>
+                    </ul>
+                </div>
+                <div class="aside-list">
+                    <h3>최근 글</h3>
+                    <ul>
+                        <li><a href="#html-practice">HTML5 응용과 실습</a></li>
+                        <li><a href="#html-basic">HTML5 개요와 활용</a></li>
+                        <li><a href="14etc_action.html">반응 선택자와 상태 선택자</a></li>
+                        <li><a href="13desc_tableWithChildren.html">표와 자손 선택자</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <footer id="main-footer">
+            <a href="../index.html">수업 및 과제 목록으로 돌아가기</a>
+            <p>ITCookBook HTML5 Programming</p>
+        </footer>
+    </div>
+</body>
+</html>
