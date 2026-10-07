@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>3.CSS3단위</title>
+    <style>
+        /* 2. %단위 적용하기 
+        참고>> 순서 바꾼이유 : nth-child는 <p>만 세는 게 아니라, 같은 부모 아랴의 모든 형제 요소를 세기떄문 */
+        p:nth-child(1){}
+        p:nth-child(2){ font-size: 100%; }
+        p:nth-child(3){ font-size: 150%; }
+        p:nth-child(4){ font-size: 200%; }
+
+        /* 3. em단위 적용하기: 배수를 나타내는 단위. 
+                            1배   =   1em = 100%
+                            1.5배 = 1.5em = 150%    */
+        p:nth-child(1){}
+        p:nth-child(2){ font-size: 1.0em; }
+        p:nth-child(3){ font-size: 1.5em; }
+        p:nth-child(4){ font-size: 2.0em; }
+
+        /* 4. px단위 적용하기: px단위는 크기를 절대적으로 지정함.
+                  p태그의 기본 font-size속성이 16px 이므로 실행결과 같음. */
+        p:nth-child(1){}
+        p:nth-child(2){ font-size: 16px; }
+        p:nth-child(3){ font-size: 24px; }
+        p:nth-child(4){ font-size: 32px; }
+
+        /* 색상 단위 */
+        h1{ background-color: rgb(255, 255, 0);}/* RGB색상 */
+        h2{ background-color: rgb(103, 17, 17, 0.806);}/* RGBA색상 : 알파값은 투명도 0완전투명, 1.0완전 불투명 상태 */
+        h3{ background-color: rgb(#0094ff);}/* HEX 코드: RGB 색상을 짧게 입력하는 표현 방식 */
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <hr>
+    <h1>ch05. CSS3기초: 선택자와 단위</h1>
+    <h2>6. CSS3 단위</h2>
+    <h3>6.1 키워드 단위 : W3C에서 미리 정의한 단어</h3>
+    <h3>6.2 크기 단위</h3>
+    <h3>6.3 색상 단위</h3>
+</body>
+</html>
