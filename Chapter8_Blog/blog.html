@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 학습 블로그</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body id="top">
+  <div id="page-wrapper">
+    <header id="main-header">
+      <h1>HTML5 학습 블로그</h1>
+      <p>웹 프로그래밍 수업 실습 기록</p>
+    </header>
+
+    <nav id="main-navigation" aria-label="블로그 메뉴">
+      <ul class="outer-menu">
+        <li class="menu-item">
+          <a href="#html-overview">HTML5</a>
+          <ul class="inner-menu">
+            <li><a href="#html-overview">HTML5 개요와 활용</a></li>
+            <li><a href="#html-practice">HTML5 응용과 실습</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="../Chapter5/1selector_tagidclass.html">CSS3</a>
+          <ul class="inner-menu">
+            <li><a href="../Chapter5/1selector_tagidclass.html">기본 선택자</a></li>
+            <li><a href="../Chapter7/4oneTrueLayout.html">레이아웃</a></li>
+            <li><a href="../Chapter8/7media_feature.html">미디어 쿼리</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="../Chapter2/05HTMLPageWithScript.html">JavaScript</a>
+          <ul class="inner-menu">
+            <li><a href="../Chapter2/05HTMLPageWithScript.html">기본 스크립트</a></li>
+            <li><a href="../Chapter2/07HTMLPageWithOuterScript.html">외부 스크립트</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="search-bar" role="search">
+        <input id="search-word" type="text" placeholder="블로그 글 검색" aria-label="블로그 글 검색">
+        <input type="submit" value="검색">
+      </form>
+    </nav>
+
+    <main id="content">
+      <section id="main-section" aria-label="블로그 글">
+        <article id="html-overview">
+          <header>
+            <h2>HTML5 개요와 활용</h2>
+            <p class="article-date">2026년 11월 4일</p>
+          </header>
+          <div class="article-body">
+            <img src="../Chapter3/Penguins.jpg" width="430" alt="펭귄 사진">
+            <p>HTML은 웹 페이지의 구조를 표현하는 마크업 언어입니다. 제목과 문단, 링크와 이미지를 태그로 구분해 내용을 읽기 쉽게 만들 수 있습니다.</p>
+            <p>이 페이지는 header, nav, section, article, aside, footer 태그를 사용해 각 영역의 역할을 나눴습니다.</p>
+          </div>
+        </article>
+
+        <article id="html-practice">
+          <header>
+            <h2>HTML5 응용과 실습</h2>
+            <p class="article-date">2026년 11월 4일</p>
+          </header>
+          <div class="article-body">
+            <img src="../Chapter3/papa.jpg" width="430" alt="북극곰 사진">
+            <p>외부 CSS 파일로 글자 크기와 여백, 테두리를 지정했습니다. 넓은 화면에서는 float로 본문과 사이드바를 나란히 배치했습니다.</p>
+            <p>화면이 좁아지면 미디어 쿼리가 적용되어 사이드바가 본문 아래로 이동합니다.</p>
+          </div>
+        </article>
+      </section>
+
+      <aside id="main-aside">
+        <h2>카테고리</h2>
+        <ul>
+          <li><a href="../Chapter3/1text_header.html">HTML 콘텐츠</a></li>
+          <li><a href="../Chapter4/1form_basic.html">입력 양식</a></li>
+          <li><a href="../Chapter5/1selector_tagidclass.html">CSS 선택자</a></li>
+          <li><a href="../Chapter7/4oneTrueLayout.html">레이아웃</a></li>
+          <li><a href="../Chapter8/7media_feature.html">반응형 웹</a></li>
+        </ul>
+        <h2>최근 글</h2>
+        <ul>
+          <li><a href="#html-practice">HTML5 응용과 실습</a></li>
+          <li><a href="#html-overview">HTML5 개요와 활용</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer id="main-footer">
+      <p>2026101157 안승호</p>
+      <p><a href="../index.html">실습 및 과제 목차</a> · <a href="#top">맨 위로</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>

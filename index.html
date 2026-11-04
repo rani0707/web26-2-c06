@@ -1,79 +1,797 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Rani0707 홈페이지</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>RANI</title>
+    <link rel="icon" type="image/webp" href="index/logo.webp">
+    <link rel="stylesheet" href="index/style.css">
+  </head>
+  <body id="top">
+    <header class="header">
+      <div class="wrap header-inner">
+        <a href="#top" class="logo" aria-label="RANI Web Class 홈">RANI<span>Frontend Fundamentals</span></a>
+        <nav aria-label="주요 메뉴">
+          <a href="#chapters">Chapters</a>
+          <a href="#assignments">Assignments</a>
+          <a class="external" href="https://raniweb.kr" target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section" id="chapters" aria-labelledby="chapters-title">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">LEARNING ARCHIVE</p>
+              <h2 id="chapters-title">Chapters & Practice</h2>
+            </div>
+            <label class="search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="10.5" cy="10.5" r="6.5"/>
+                <path d="m16 16 5 5"/>
+              </svg>
+              <input id="search" type="search" placeholder="실습 파일 검색..." aria-label="실습 파일 검색">
+            </label>
+          </div>
+          <div class="filters" role="group" aria-label="챕터 선택">
+            <button class="filter" type="button" data-filter="all" aria-pressed="true">전체 보기</button>
+            <button class="filter" type="button" data-filter="Chapter2" aria-pressed="false">Chapter 2</button>
+            <button class="filter" type="button" data-filter="Chapter3" aria-pressed="false">Chapter 3</button>
+            <button class="filter" type="button" data-filter="Chapter4" aria-pressed="false">Chapter 4</button>
+            <button class="filter" type="button" data-filter="Chapter5" aria-pressed="false">Chapter 5</button>
+            <button class="filter" type="button" data-filter="Chapter6" aria-pressed="false">Chapter 6</button>
+            <button class="filter" type="button" data-filter="Chapter7" aria-pressed="false">Chapter 7</button>
+            <button class="filter" type="button" data-filter="Chapter8" aria-pressed="false">Chapter 8</button>
+          </div>
+          <div class="grid">
 
-<body>
-    <h1>Rani0707 홈페이지에 오신 것을 환영합니다.</h1>
+            <!-- Chapter2 -->
+            <article class="chapter-card" data-chapter="Chapter2">
+              <div class="card-meta">
+                <span>CHAPTER2</span>
+                <span>07 LESSONS</span>
+              </div>
+              <p class="date">2026.09.09 ~ 2026.09.16</p>
+              <ul class="lesson-list">
+                <li>
+                  <a href="Chapter2/01주석.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">주석 작성하기</span>
+                      <span class="filename">01주석.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter2/01HTMLPage.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">첫 HTML 페이지</span>
+                      <span class="filename">01HTMLPage.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter2/02HTMLPageWithStyle.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">HTML에 스타일 입히기</span>
+                      <span class="filename">02HTMLPageWithStyle.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter2/04HTMLPageWithLink.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">외부 스타일 연결</span>
+                      <span class="filename">04HTMLPageWithLink.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter2/05HTMLPageWithScript.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">자바스크립트 시작하기</span>
+                      <span class="filename">05HTMLPageWithScript.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter2/07HTMLPageWithOuterScript.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">외부 스크립트 연결</span>
+                      <span class="filename">07HTMLPageWithOuterScript.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter2/08HTMLPageWithError.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">스크립트 오류 살펴보기</span>
+                      <span class="filename">08HTMLPageWithError.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
 
-    <h1>Chapter2 - 2026.09.09 ~ 2026.09.16</h1>
-        <a href="Chapter2/01주석.html">01주석.html</a><br>
-        <a href="Chapter2/01HTMLPage.html">01HTMLPage.html</a><br>
-        <a href="Chapter2/02HTMLPageWithStyle.html">02HTMLPageWithStyle.html</a><br>
-        <a href="Chapter2/04HTMLPageWithLink.html">04HTMLPageWithLink.html</a><br>
-        <a href="Chapter2/05HTMLPageWithScript.html">05HTMLPageWithScript.html</a><br>
-        <a href="Chapter2/07HTMLPageWithOuterScript.html">07HTMLPageWithOuterScript.html</a><br>
-        <a href="Chapter2/08HTMLPageWithError.html">08HTMLPageWithError.html</a><br>
+            <!-- Chapter3 -->
+            <article class="chapter-card" data-chapter="Chapter3">
+              <div class="card-meta">
+                <span>CHAPTER3</span>
+                <span>08 LESSONS</span>
+              </div>
+              <p class="date">2026.09.16 ~ 2026.09.23</p>
+              <ul class="lesson-list">
+                <li>
+                  <a href="Chapter3/1text_header.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">제목 태그 사용하기</span>
+                      <span class="filename">1text_header.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter3/3text_content.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">본문과 문단 작성하기</span>
+                      <span class="filename">3text_content.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter3/5text_anchor.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">링크 연결하기</span>
+                      <span class="filename">5text_anchor.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter3/10nested_llist.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">중첩 목록 만들기</span>
+                      <span class="filename">10nested_llist.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter3/11table_basic.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">기본 표 만들기</span>
+                      <span class="filename">11table_basic.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter3/12table_cell.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">표의 셀 구성하기</span>
+                      <span class="filename">12table_cell.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter3/13table_span.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">표의 셀 병합하기</span>
+                      <span class="filename">13table_span.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter3/14image_basic.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">이미지 삽입하기</span>
+                      <span class="filename">14image_basic.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
 
-    <h1>Chapter3 - 2026.09.16 ~ 2026.09.23</h1>
-        <a href="Chapter3/1text_header.html">1text_header.html</a><br>
-        <a href="Chapter3/3text_content.html">3text_content.html</a><br>
-        <a href="Chapter3/5text_anchor.html">5text_anchor.html</a><br>
-        <a href="Chapter3/10nested_llist.html">10nested_llist.html</a><br>
-        <a href="Chapter3/11table_basic.html">11table_basic.html</a><br>
-        <a href="Chapter3/12table_cell.html">12table_cell.html</a><br>
-        <a href="Chapter3/13table_span.html">13table_span.html</a><br>
-        <a href="Chapter3/14image_basic.html">14image_basic.html</a><br>
+            <!-- Chapter4 -->
+            <article class="chapter-card" data-chapter="Chapter4">
+              <div class="card-meta">
+                <span>CHAPTER4</span>
+                <span>07 LESSONS</span>
+              </div>
+              <p class="date">2026.09.23 ~ 2026.09.30</p>
+              <ul class="lesson-list">
+                <li>
+                  <a href="Chapter4/1form_basic.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">기본 입력 폼 만들기</span>
+                      <span class="filename">1form_basic.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter4/2note_form.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">다양한 입력 요소 살펴보기</span>
+                      <span class="filename">2note_form.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter4/4form_selectBasic.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">선택 목록 만들기</span>
+                      <span class="filename">4form_selectBasic.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter4/8note_textarea.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">여러 줄 입력창 만들기</span>
+                      <span class="filename">8note_textarea.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter4/9space_block.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">블록 영역 나누기</span>
+                      <span class="filename">9space_block.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter4/12space_semanticless.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">일반 태그로 페이지 구성하기</span>
+                      <span class="filename">12space_semanticless.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter4/13space_semanticless.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">시맨틱 태그로 페이지 구성하기</span>
+                      <span class="filename">13space_semanticless.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
 
-    <h1>Chapter4 - 2026.09.23 ~ 2026.09.30</h1>
-        <a href="Chapter4/1form_basic.html">1form_basic.html</a><br>
-        <a href="Chapter4/2note_form.html">2note_form.html</a><br>
-        <a href="Chapter4/4form_selectBasic.html">4form_selectBasic.html</a><br>
-        <a href="Chapter4/8note_textarea.html">8note_textarea.html</a><br>
-        <a href="Chapter4/9space_block.html">9space_block.html</a><br>
-        <a href="Chapter4/12space_semanticless.html">12space_semanticless.html</a><br>
-        <a href="Chapter4/13space_semanticless.html">13space_semanticless.html</a><br>
+            <!-- Chapter5 -->
+            <article class="chapter-card" data-chapter="Chapter5">
+              <div class="card-meta">
+                <span>CHAPTER5</span>
+                <span>08 LESSONS</span>
+              </div>
+              <p class="date">2026.09.30 ~ 2026.10.07</p>
+              <ul class="lesson-list">
+                <li>
+                  <a href="Chapter5/1selector_tagidclass.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">태그·아이디·클래스 선택자</span>
+                      <span class="filename">1selector_tagidclass.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter5/9attribute_basic.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">속성 선택자 사용하기</span>
+                      <span class="filename">9attribute_basic.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter5/11secs_descendants.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">후손 선택자 사용하기</span>
+                      <span class="filename">11secs_descendants.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter5/13desc_tableWithChildren.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">자식 선택자로 표 꾸미기</span>
+                      <span class="filename">13desc_tableWithChildren.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter5/14etc_action.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">반응 선택자 사용하기</span>
+                      <span class="filename">14etc_action.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter5/16etc_structure.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">구조 선택자 사용하기</span>
+                      <span class="filename">16etc_structure.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter5/17etc_structureFalse.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">구조 선택자 주의사항</span>
+                      <span class="filename">17etc_structureFalse.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter5/19CSS3Unit_base.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">CSS 단위 살펴보기</span>
+                      <span class="filename">19CSS3Unit_base.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
 
-    <h1>Chapter5 - 2026.09.30 ~ 2026.10.07</h1>
-        <a href="Chapter5/1selector_tagidclass.html">1selector_tagidclass.html</a><br>
-        <a href="Chapter5/9attribute_basic.html">9attribute_basic.html</a><br>
-        <a href="Chapter5/11secs_descendants.html">11secs_descendants.html</a><br>
-        <a href="Chapter5/13desc_tableWithChildren.html">13desc_tableWithChildren.html</a><br>
-        <a href="Chapter5/14etc_action.html">14etc_action.html</a><br>
-        <a href="Chapter5/16etc_structure.html">16etc_structure.html</a><br>
-        <a href="Chapter5/17etc_structureFalse.html">17etc_structureFalse.html</a><br>
-        <a href="Chapter5/19CSS3Unit_base.html">19CSS3Unit_base.html</a><br>
+            <!-- Chapter6 -->
+            <article class="chapter-card" data-chapter="Chapter6">
+              <div class="card-meta">
+                <span>CHAPTER6</span>
+                <span>13 LESSONS</span>
+              </div>
+              <p class="date">2026.10.07 ~ 2026.10.21</p>
+              <ul class="lesson-list">
+                <li>
+                  <a href="Chapter6/1_box_widthHeight.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">박스의 너비와 높이 지정하기</span>
+                      <span class="filename">1_box_widthHeight.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/5border_basic.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">테두리 꾸미기</span>
+                      <span class="filename">5border_basic.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/8display_none.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">요소 숨기기</span>
+                      <span class="filename">8display_none.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/12display_inlineWithMargin.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">인라인 요소의 여백 살펴보기</span>
+                      <span class="filename">12display_inlineWithMargin.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/13display_inline-blockWithhMargin.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">인라인 블록의 여백 살펴보기</span>
+                      <span class="filename">13display_inline-blockWithhMargin.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/14background_image.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">배경 이미지 넣기</span>
+                      <span class="filename">14background_image.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/19background_repeatNone.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">배경 이미지 반복 설정하기</span>
+                      <span class="filename">19background_repeatNone.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/24font_size.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">글자 크기 지정하기</span>
+                      <span class="filename">24font_size.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/28font_styleWeight.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">글자 스타일과 굵기 지정하기</span>
+                      <span class="filename">28font_styleWeight.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/34position_absolute.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">절대 위치로 요소 배치하기</span>
+                      <span class="filename">34position_absolute.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/37position_fomulaBasic.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">위치 기준과 넘침 처리하기</span>
+                      <span class="filename">37position_fomulaBasic.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/43float_basic.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">Float로 요소 정렬하기</span>
+                      <span class="filename">43float_basic.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter6/48shadow_textShadow.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">글자에 그림자 넣기</span>
+                      <span class="filename">48shadow_textShadow.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
 
-    <h1>Chapter6 - 2026.10.07 ~ 2026.10.21</h1>
-        <a href="Chapter6/1_box_widthHeight.html">1_box_widthHeight.html</a><br>
-        <a href="Chapter6/5border_basic.html">5border_basic.html</a><br>
-        <a href="Chapter6/8display_none.html">8display_none.html</a><br>
-        <a href="Chapter6/12display_inlineWithMargin.html">12display_inlineWithMargin.html</a><br>
-        <a href="Chapter6/13display_inline-blockWithhMargin.html">13display_inline-blockWithhMargin.html</a><br>
-        <a href="Chapter6/14background_image.html">14background_image.html</a><br>
-        <a href="Chapter6/19background_repeatNone.html">19background_repeatNone.html</a><br>
-        <a href="Chapter6/24font_size.html">24font_size.html</a><br>
-        <a href="Chapter6/28font_styleWeight.html">28font_styleWeight.html</a><br>
-        <a href="Chapter6/34position_absolute.html">34position_absolute.html</a><br>
-        <a href="Chapter6/37position_fomulaBasic.html">37position_fomulaBasic.html</a><br>
-        <a href="Chapter6/43float_basic.html">43float_basic.html</a><br>
-        <a href="Chapter6/48shadow_textShadow.html">48shadow_textShadow.html</a><br>
+            <!-- Chapter7 -->
+            <article class="chapter-card" data-chapter="Chapter7">
+              <div class="card-meta">
+                <span>CHAPTER7</span>
+                <span>09 LESSONS</span>
+              </div>
+              <p class="date">2026.10.28 ~ 2026.10.28</p>
+              <ul class="lesson-list">
+                <li>
+                  <a href="Chapter7/1floatWithOverflow1.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">Float와 Overflow 활용하기</span>
+                      <span class="filename">1floatWithOverflow1.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter7/2noteclear.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">Clear로 Float 해제하기</span>
+                      <span class="filename">2noteclear.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter7/3marginWidth.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">너비와 여백으로 중앙 정렬하기</span>
+                      <span class="filename">3marginWidth.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter7/4oneTrueLayout.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">One True 레이아웃 만들기</span>
+                      <span class="filename">4oneTrueLayout.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter7/5note_flex.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">Flex 레이아웃 살펴보기</span>
+                      <span class="filename">5note_flex.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter7/6absolutePosition.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">절대 위치로 레이아웃 만들기</span>
+                      <span class="filename">6absolutePosition.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter7/7absolutePosition_align.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">절대 위치로 중앙 정렬하기</span>
+                      <span class="filename">7absolutePosition_align.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter7/8fixedBar.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">고정 바 만들기</span>
+                      <span class="filename">8fixedBar.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter7/9ellipsis.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">긴 글 말줄임 처리하기</span>
+                      <span class="filename">9ellipsis.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
 
-    <h1>Chapter7 - 2026.10.28 ~</h1>
-        <a href="Chapter7/1floatWithOverflow1.html">1floatWithOverflow1.html</a><br>
-        <a href="Chapter7/2noteclear.html">2noteclear.html</a><br>
-        <a href="Chapter7/3marginWidth.html">3marginWidth.html</a><br>
-        <a href="Chapter7/4oneTrueLayout.html">4oneTrueLayout.html</a><br>
-        <a href="Chapter7/5note_flex.html">5note_flex.html</a><br>
-        <a href="Chapter7/6absolutePosition.html">6absolutePosition.html</a><br>
-        <a href="Chapter7/7absolutePosition_align.html">7absolutePosition_align.html</a><br>
-        <a href="Chapter7/8fixedBar.html">8fixedBar.html</a><br>
-        <a href="Chapter7/9ellipsis.html">9ellipsis.html</a><br>
-
-    <h2>Chapter5 과제 - 블로그 레이아웃 구성</h2>
-        <a href="Chapter5/ch5_blog_layout.html">CH5 블로그 레이아웃 과제</a><br>
-</body>
+            <!-- Chapter8 -->
+            <article class="chapter-card" data-chapter="Chapter8">
+              <div class="card-meta">
+                <span>CHAPTER8</span>
+                <span>10 LESSONS</span>
+              </div>
+              <p class="date">2026.11.04</p>
+              <ul class="lesson-list">
+                <li>
+                  <a href="Chapter8/1without_meta.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">뷰포트 설정이 없는 화면</span>
+                      <span class="filename">1without_meta.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter8/2with_meta.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">뷰포트 메타 태그 적용하기</span>
+                      <span class="filename">2with_meta.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter8/2_1note_meta.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">뷰포트 속성 테스트하기</span>
+                      <span class="filename">2_1note_meta.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter8/3at_media_rule.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">화면과 인쇄용 스타일 적용하기</span>
+                      <span class="filename">3at_media_rule.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter8/7media_feature.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">화면 너비에 따라 스타일 바꾸기</span>
+                      <span class="filename">7media_feature.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter8/8orientation.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">화면 방향에 따라 스타일 바꾸기</span>
+                      <span class="filename">8orientation.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter8/9pattern1.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">반응형 웹 패턴 실습하기</span>
+                      <span class="filename">9pattern1.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter8/10pattern2.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">반응형 웹 패턴 2</span>
+                      <span class="filename">10pattern2.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter8/11pattern3.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">반응형 웹 패턴 3</span>
+                      <span class="filename">11pattern3.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chapter8/12pattern4.html">
+                    <span class="file-icon" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="lesson-content">
+                      <span class="lesson-title">반응형 웹 패턴 4</span>
+                      <span class="filename">12pattern4.html</span>
+                    </span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </div>
+          <p class="empty" id="empty" role="status" hidden>검색 결과가 없습니다. 다른 검색어를 입력해 주세요.</p>
+          <p id="result-status" role="status" class="result-status">
+          </p>
+        </div>
+      </section>
+      <section class="section assignment" id="assignments" aria-labelledby="assignments-title">
+        <div class="wrap">
+          <p class="eyebrow">PUTTING IT INTO PRACTICE</p>
+          <h2 id="assignments-title">Assignments</h2>
+          <div class="assignment-card">
+            <div>
+              <span class="assignment-label">CHAPTER 08 · WEEK 9 · HTML / CSS</span>
+              <h3>CH8 블로그 레이아웃 구성</h3>
+              <p>ch8_블로그 스타일시트 적용(p279~290) 과제 제출</p>
+            </div>
+            <a class="button" href="Chapter8_Blog/blog.html">블로그 보기 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="assignment-card">
+            <div>
+              <span class="assignment-label">CHAPTER 05 · WEEK 5 · HTML / CSS</span>
+              <h3>CH5 블로그 레이아웃 구성</h3>
+              <p>ch5_블로그 레이아웃 구성(p120~122) 과제 제출</p>
+            </div>
+            <a class="button" href="Chapter5/ch5_blog_layout.html">과제 살펴보기 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-inner">
+        <div class="footer-identity">
+          <div class="footer-brand-row">
+            <span class="footer-brand">RANI</span>
+            <a class="github-link" href="https://github.com/rani0707" target="_blank" rel="noopener noreferrer" aria-label="RANI GitHub (새 탭)">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.23c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.18A10.98 10.98 0 0 1 12 5.97c.98 0 1.96.13 2.88.39 2.2-1.49 3.16-1.18 3.16-1.18.62 1.58.23 2.75.11 3.04.73.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14v3.23c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+              </svg>
+            </a>
+          </div>
+          <p>2026101157 안승호</p>
+        </div>
+        <div class="footer-contact">
+          <p>© 2026 RANI. All rights reserved.</p>
+          <a href="mailto:support@raniweb.kr">support@raniweb.kr</a>
+        </div>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <script src="index/script.js"></script>
+  </body>
 </html>

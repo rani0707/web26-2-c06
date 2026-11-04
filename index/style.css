@@ -1,0 +1,537 @@
+:root {
+  color-scheme: light;
+  --ink: #111;    
+  --muted: #777;
+  --line: #eaeaea;
+  --paper: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input {
+  font: inherit;
+}
+
+button, a, input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 5px;
+}
+
+/* 공통 레이아웃과 바로가기 */
+.wrap {
+  width: min(1120px,calc(100% - 64px));
+  margin: auto;
+}
+
+.skip-link {
+  position: fixed;
+  top: -60px;
+  left: 20px;
+  z-index: 10;
+  background: #111;
+  color: white;
+  padding: 12px;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: rgba(255,255,255,.96);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: 850;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  font-size: 11px;
+  font-weight: 500;
+  color: #888;
+  letter-spacing: 1.8px;
+  margin-left: 12px;
+  padding-left: 15px;
+  border-left: 1px solid #ddd;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 13px;
+  color: #6a6a6a;
+}
+
+nav a:hover {
+  color: #111;
+}
+
+.external {
+  border: 1px solid var(--line);
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #222;
+}
+
+.button {
+  display: inline-flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 20px;
+  border: 1px solid #111;
+  border-radius: 5px;
+  background: #111;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background .2s,transform .2s;
+}
+
+.button:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* 섹션 제목 */
+.section {
+  padding: 75px 0 85px;
+  border-top: 1px solid var(--line);
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #999;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: -1.3px;
+  font-weight: 750;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 0 13px;
+  gap: 9px;
+  width: 250px;
+  color: #888;
+}
+
+.search svg {
+  flex-shrink: 0;
+}
+
+.search input {
+  min-width: 0;
+  width: 100%;
+  height: 42px;
+  border: 0;
+  background: transparent;
+  color: #111;
+  font-size: 12px;
+  outline-offset: 0;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 30px 0 26px;
+}
+
+.filter {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 9px 14px;
+  border-radius: 5px;
+  font-size: 11px;
+  color: #777;
+  cursor: pointer;
+}
+
+.filter:hover {
+  border-color: #aaa;
+}
+
+.filter[aria-pressed="true"] {
+  color: white;
+  background: #111;
+  border-color: #111;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 22px;
+  align-items: start;
+}
+
+.chapter-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 9px;
+  padding: 25px 23px 0;
+  background: white;
+  transition: box-shadow .2s,border-color .2s;
+}
+
+.chapter-card:hover {
+  border-color: #bbb;
+  box-shadow: 0 8px 25px #00000004;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #999;
+}
+
+.card-meta span:first-child {
+  color: #555;
+}
+
+.date {
+  color: #999;
+  font-size: 10px;
+  margin: 16px 0 20px;
+}
+
+.lesson-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid #eee;
+}
+
+.lesson-list li + li {
+  border-top: 1px solid #f2f2f2;
+}
+
+.lesson-list a {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 10px;
+  min-height: 41px;
+}
+
+.lesson-list a:hover {
+  color: #111;
+  background: #fafafa;
+}
+
+.file-icon {
+  font-family: monospace;
+  color: #aaa;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+.lesson-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.lesson-title {
+  color: #333;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 600;
+  word-break: keep-all;
+}
+
+.filename {
+  overflow-wrap: anywhere;
+  color: #555;
+}
+
+.link-arrow {
+  margin-left: auto;
+  color: #bbb;
+  flex-shrink: 0;
+}
+
+.lesson-list a:hover .link-arrow {
+  color: #111;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* 검색 결과 안내 */
+.result-status {
+  font-size: 11px;
+  color: #888;
+  margin: 20px 0 0;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  padding: 60px 20px;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.assignment {
+  background: #fafafa;
+}
+
+.assignment-card {
+  margin-top: 30px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+.assignment-label {
+  font-size: 10px;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+.assignment-card h3 {
+  font-size: 20px;
+  letter-spacing: -.7px;
+  margin: 10px 0;
+}
+
+.assignment-card p {
+  margin: 0;
+  color: #888;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+footer {
+  padding: 35px 0;
+  border-top: 1px solid var(--line);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-brand {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.footer-inner p, .footer-inner a {
+  font-size: 10px;
+  color: #999;
+}
+
+.footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-inner .github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: #777;
+}
+
+.footer-inner .github-link:hover {
+  color: #111;
+}
+
+.github-link svg {
+  width: 19px;
+  height: 19px;
+  fill: currentColor;
+}
+
+.footer-identity p {
+  margin: 6px 0 0;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact p {
+  margin: 0 0 7px;
+}
+
+.footer-contact a:hover {
+  color: #111;
+}
+
+@media (max-width: 960px) {
+
+  .grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .wrap {
+    width: calc(100% - 40px);
+  }
+
+  .header-inner {
+    height: 66px;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  nav {
+    gap: 18px;
+    font-size: 11px;
+  }
+
+  nav .external {
+    display: none;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .search {
+    margin-top: 23px;
+    width: 100%;
+  }
+
+  .filters {
+    gap: 6px;
+    margin-top: 20px;
+  }
+
+  .filter {
+    padding: 8px 11px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .chapter-card {
+    padding: 24px 22px 0;
+  }
+
+  .lesson-list a {
+    font-size: 12px;
+  }
+
+  .assignment-card {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .footer-inner {
+    flex-wrap: wrap;
+  }
+
+  .footer-contact {
+    width: 100%;
+    order: 3;
+    text-align: left;
+  }
+
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+
+}
