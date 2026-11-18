@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Basic</title>
-    
-</head>
+    <script>
+        // Date 객체를 선언합니다: 현재 시간 측정
+        let date = new Date();
+        let month = date.getMonth() + 1;
 
+        // 조건문
+        if (3 <= month && month <= 5) {
+            alert('봄입니다.');
+        } else if (6 <= month && month <= 8) {
+            alert('여름입니다.');
+        } else if (9 <= month && month <= 11) {
+            alert('가을입니다.');
+        } else {
+            alert('겨울입니다.');
+        }
+    </script>
+</head>
 <body>
     const 키워드<hr>
     
@@ -15,5 +28,4 @@
     <h5>    1_조건문</h5>
     <h5>    2_반복문</h5>
 </body>
-
 </html>

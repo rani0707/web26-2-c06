@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Basic</title>
+    <script>
+        function callTenTimes(callback) {
+            for (let i = 0; i < 10; i++) {
+                callback();
+            }
+        }
+
+        callTenTimes(function () {
+            alert('함수 호출');
+        });
+    </script>
 </head>
 <body>
     <h2>콜백 함수: 매개변수로 전달되는 함수</h2> 

@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Basic</title>
+    <script>
+        let date = new Date();
+        let hours = date.getHours();
+
+        if (hours < 5) {
+            alert('잠을 자렴....');
+        } else {
+            if (hours < 7) {
+                alert('준비');
+            } else {
+                if (hours < 9) {
+                    alert('출근');
+                } else {
+                    if (hours < 12) {
+                        alert('빈둥빈둥');
+                    } else {
+                        if (hours < 14) {
+                            alert('식사');
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     중첩 조건문으로 하루 일정 표현<hr>
