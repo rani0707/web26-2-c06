@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basic</title>
+    <script src="https://code.jQuery.com/jQuery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            let text = $('h1').text();
+            let html = $('h1').html();
+
+            alert("text: " + text);
+            alert("html: " + html);
+        });
+    </script>
+</head>
+<body>
+    <h4>3.3글자 조작</h4>
+    <ol>
+        <li>text()메서드로 내부 글자 조작하기</li>
+        <li><b>html()메서드로 내부 글자 조작하기</b></li>
+    </ol>
+    <hr>
+
+    <h1>Header-0</h1>
+    <h1>Header-1</h1>
+</body>
+</html>
